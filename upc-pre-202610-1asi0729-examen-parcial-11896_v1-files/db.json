@@ -1,0 +1,72 @@
+{
+  "economic-observatories": [
+    {
+      "id": 1,
+      "name": "Latin America Economic Observatory",
+      "regionCode": "LAC"
+    },
+    {
+      "id": 2,
+      "name": "East Asia Economic Observatory",
+      "regionCode": "EAS"
+    },
+    {
+      "id": 3,
+      "name": "Europe and Central Asia Economic Observatory",
+      "regionCode": "ECS"
+    },
+    {
+      "id": 4,
+      "name": "Middle East Economic Observatory",
+      "regionCode": "MEA"
+    },
+    {
+      "id": 5,
+      "name": "North America Economic Observatory",
+      "regionCode": "NAC"
+    },
+    {
+      "id": 6,
+      "name": "South Asia Economic Observatory",
+      "regionCode": "SAS"
+    }
+  ],
+  "economic-indicator-items": [
+    {
+      "id": 1,
+      "observatoryId": 1,
+      "regionCode": "LAC",
+      "countryCode": "PER",
+      "countryName": "Peru",
+      "indicatorId": "NY.GDP.MKTP.CD",
+      "indicatorName": "GDP (current US$)",
+      "indicatorValue": 289221969062.941,
+      "reportYear": "2024",
+      "registeredAt": "2026-05-18T08:15:00Z"
+    },
+    {
+      "id": 2,
+      "observatoryId": 1,
+      "regionCode": "LAC",
+      "countryCode": "BRA",
+      "countryName": "Brazil",
+      "indicatorId": "FP.CPI.TOTL.ZG",
+      "indicatorName": "Inflation, consumer prices (annual %)",
+      "indicatorValue": 4.36746407652336,
+      "reportYear": "2024",
+      "registeredAt": "2026-05-18T08:30:00Z"
+    },
+    {
+      "id": 3,
+      "observatoryId": 5,
+      "regionCode": "NAC",
+      "countryCode": "USA",
+      "countryName": "United States",
+      "indicatorId": "SP.POP.TOTL",
+      "indicatorName": "Population, total",
+      "indicatorValue": 340110988,
+      "reportYear": "2024",
+      "registeredAt": "2026-05-18T09:00:00Z"
+    }
+  ]
+}
