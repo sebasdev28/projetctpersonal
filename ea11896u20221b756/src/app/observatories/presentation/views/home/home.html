@@ -1,0 +1,24 @@
+<section class="home-view" aria-label="Home view">
+  <h1>Home</h1>
+  <p class="welcome-text">Economic Observatory Management.</p>
+
+  <section class="indicators-section" aria-label="My economic indicators section">
+    <h2>My Economic Indicators</h2>
+
+    @if (store.loading()) {
+      <p>Loading...</p>
+    } @else if (store.items().length === 0) {
+      <mat-card>
+        <mat-card-content>Empty</mat-card-content>
+      </mat-card>
+    } @else {
+      <mat-grid-list cols="2" rowHeight="280px" gutterSize="16px">
+        @for (item of store.items(); track item.id) {
+          <mat-grid-tile>
+            <app-economic-indicator-summary [item]="item"></app-economic-indicator-summary>
+          </mat-grid-tile>
+        }
+      </mat-grid-list>
+    }
+  </section>
+</section>

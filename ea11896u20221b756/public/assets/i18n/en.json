@@ -1,0 +1,34 @@
+{
+  "toolbar.title": "World Bank Economic Monitoring Platform",
+  "toolbar.home": "Home",
+  "toolbar.new-economic-indicator": "New Economic Indicator",
+
+  "home.title": "Home",
+  "home.description": "Economic Observatory Management.",
+  "home.my-economic-indicators": "My Economic Indicators",
+  "home.empty": "Empty",
+  "home.loading": "Loading...",
+
+  "summary.country": "Country",
+  "summary.region": "Region",
+  "summary.registered-at": "Registered At",
+  "summary.value": "Value",
+  "summary.year": "Year",
+
+  "new-indicator.title": "New Economic Indicator",
+  "new-indicator.subtitle": "Register Economic Indicators for an Observatory.",
+  "new-indicator.region-code": "Region Code",
+  "new-indicator.country": "Country",
+  "new-indicator.economic-indicator": "Economic Indicator",
+  "new-indicator.cancel": "Cancel",
+  "new-indicator.create": "Create",
+  "new-indicator.complete-fields": "Complete all fields",
+  "new-indicator.observatory-not-found": "Observatory not found for selected region",
+  "new-indicator.no-value-found": "No available indicator value found",
+  "new-indicator.created": "Economic indicator registered",
+
+  "page-not-found.title": "Page Not Found",
+  "page-not-found.message": "The route",
+  "page-not-found.not-found": "was not found.",
+  "page-not-found.return-home": "Return to Home"
+}

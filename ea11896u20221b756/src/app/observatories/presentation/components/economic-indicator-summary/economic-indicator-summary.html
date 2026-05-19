@@ -1,0 +1,16 @@
+<mat-card class="summary-card" aria-label="Economic indicator summary card">
+  <mat-card-header>
+    <mat-card-title>{{ item().indicatorName }}</mat-card-title>
+  </mat-card-header>
+
+  <mat-card-content>
+    <p><strong>Country:</strong> {{ item().countryName }}</p>
+    <p><strong>Region:</strong> {{ item().regionCode }}</p>
+    <p><strong>Registered At:</strong> {{ item().registeredAt | date:'medium' }}</p>
+  </mat-card-content>
+
+  <mat-card-footer class="card-footer">
+    <span><strong>Value:</strong> {{ item().indicatorValue | number:'1.2-2' }}</span>
+    <span><strong>Year:</strong> {{ item().reportYear }}</span>
+  </mat-card-footer>
+</mat-card>

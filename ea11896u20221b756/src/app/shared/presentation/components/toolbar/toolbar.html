@@ -1,0 +1,16 @@
+<mat-toolbar class="toolbar" aria-label="Application toolbar">
+  <section class="brand" aria-label="World Bank brand">
+    <img [src]="logoUrl" alt="World Bank logo" class="brand-logo">
+    <span class="brand-title">World Bank Economic Monitoring Platform</span>
+  </section>
+
+  <nav class="navigation" aria-label="Main navigation">
+    <a mat-button routerLink="/home">Home</a>
+    <a mat-button routerLink="/economic-indicators/new">New Economic Indicator</a>
+  </nav>
+
+  <section class="language-actions" aria-label="Language switcher">
+    <button mat-button type="button">EN</button>
+    <button mat-button type="button">ES</button>
+  </section>
+</mat-toolbar>

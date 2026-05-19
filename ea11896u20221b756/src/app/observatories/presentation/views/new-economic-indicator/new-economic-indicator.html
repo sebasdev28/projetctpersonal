@@ -1,0 +1,42 @@
+<section class="new-indicator-view" aria-label="New economic indicator view">
+  <h1>New Economic Indicator</h1>
+  <p class="subtitle">Register Economic Indicators for an Observatory.</p>
+
+  <mat-card>
+    <mat-card-content>
+      <form class="indicator-form" aria-label="Economic indicator registration form">
+        <mat-form-field appearance="outline">
+          <mat-label>Region Code</mat-label>
+          <mat-select [(ngModel)]="selectedRegionCode" name="regionCode" aria-label="Select region code">
+            @for (regionCode of regionCodes; track regionCode) {
+              <mat-option [value]="regionCode">{{ regionCode }}</mat-option>
+            }
+          </mat-select>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+          <mat-label>Country</mat-label>
+          <mat-select [(ngModel)]="selectedCountryCode" name="countryCode" aria-label="Select country">
+            @for (country of countries; track country.code) {
+              <mat-option [value]="country.code">{{ country.name }}</mat-option>
+            }
+          </mat-select>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+          <mat-label>Economic Indicator</mat-label>
+          <mat-select [(ngModel)]="selectedIndicatorId" name="indicatorId" aria-label="Select economic indicator">
+            @for (indicator of economicIndicators; track indicator.id) {
+              <mat-option [value]="indicator.id">{{ indicator.name }}</mat-option>
+            }
+          </mat-select>
+        </mat-form-field>
+
+        <section class="form-actions" aria-label="Form actions">
+          <button mat-button type="button" (click)="cancel()">Cancel</button>
+          <button mat-flat-button color="primary" type="button" (click)="create()">Create</button>
+        </section>
+      </form>
+    </mat-card-content>
+  </mat-card>
+</section>

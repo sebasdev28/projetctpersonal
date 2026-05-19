@@ -1,0 +1,11 @@
+.summary-card {
+  height: 100%;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem;
+  font-size: 0.95rem;
+}
